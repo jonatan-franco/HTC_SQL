@@ -1,8 +1,8 @@
 # Motivação
-A Linguagem Estruturada de Consulta (SQL) na área de Psicologia é pouco explorada e divulgada. Sendo assim, este repositório, cujo acrônimo significa *How To Consult (HTC)*, tem por objetivo fornecer alguns exemplos básicos de consultas em tabelas simples.
+A Linguagem de Consulta Estruturada (SQL) na área de Psicologia é pouco explorada e divulgada. Sendo assim, este repositório, cujo acrônimo significa *How To Consult (HTC)*, tem por objetivo fornecer alguns exemplos básicos de consultas em tabelas simples. Este repostiróio está em construção, então, sempre volte aqui para ver novas atualizações.
 
 # Dados
-Os dados são todos fictícios e não contém nenhuma informação sensível ou sigilosa. Nós iremos trabalhar com uma tabela de pacientes que iremos popular com ID do paciente, valores da sessão, data do pagamento, data de desistência, data de entrada na terapia e tipo de acompanhamento (mensal, semanal ou quinzenal).
+Os dados são todos fictícios e não contém nenhuma informação sensível ou sigilosa. Nós iremos trabalhar com uma tabela de pacientes que iremos popular com ID do paciente, gênero, idade, valores da sessão, data do pagamento, data de desistência, data de entrada na terapia e tipo de acompanhamento (mensal, semanal ou quinzenal).
 
 # O que você vai aprender 
 * Como criar uma tabela usando **CREATE TABLE**
@@ -13,4 +13,5 @@ Os dados são todos fictícios e não contém nenhuma informação sensível ou 
 
 # Como utilizar este repositório
 Da forma como bem entender: em aulas para estudantes, fazer um *fork* no repositório, treinar através dos problemas criados, etc. A ideia é que você **treine**! Toda aprendizagem se por taxas de respostas, portanto, não adianta apenas ler, é necessário **emitir respostas no tempo**.
+
 
