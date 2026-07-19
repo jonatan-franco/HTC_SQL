@@ -13,5 +13,8 @@ Os dados são todos fictícios e não contém nenhuma informação sensível ou 
 
 # Como utilizar este repositório
 Da forma como bem entender: em aulas para estudantes, fazer um *fork* no repositório, treinar através dos problemas criados, etc. A ideia é que você **treine**! Toda aprendizagem se por taxas de respostas, portanto, não adianta apenas ler, é necessário **emitir respostas no tempo**.
+Você irá encontrar (por enquanto) dois arquivos com duas terminações diferentes: "Guia Introdutório ao SQL.md" (".md" é um tipo de arquivo conhecido como Markdown) e "htc_codigo.sql" que contém o código propriamente. 
+Leia o Guia para você se familiarizar com a Linguagem e depois acesse o cdóigo para você replicar no SQL Online trocando o nome da tabela, os valores, fazendo sua própria, etc. 
+
 
 
