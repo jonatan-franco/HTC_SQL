@@ -1,5 +1,5 @@
 # Motivação
-A Linguagem de Consulta Estruturada (SQL) na área de Psicologia é pouco explorada e divulgada. Sendo assim, este repositório, cujo acrônimo significa *How To Consult (HTC)*, tem por objetivo fornecer alguns exemplos básicos de consultas em tabelas simples. Este repostiróio está em construção, então, sempre volte aqui para ver novas atualizações.
+A Linguagem de Consulta Estruturada (SQL) na área de Psicologia é pouco explorada e divulgada. Sendo assim, este repositório, cujo acrônimo significa *How To Query (HTQ)*, tem por objetivo fornecer alguns exemplos básicos de consultas em tabelas simples. Este repostiróio está em construção, então, sempre volte aqui para ver novas atualizações.
 
 # Dados
 Os dados são todos fictícios e não contém nenhuma informação sensível ou sigilosa. Nós iremos trabalhar com uma tabela de pacientes que iremos popular com ID do paciente, gênero, idade, valores da sessão, data do pagamento, data de desistência, data de entrada na terapia e tipo de acompanhamento (mensal, semanal ou quinzenal).
