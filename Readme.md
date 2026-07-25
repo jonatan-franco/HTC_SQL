@@ -5,9 +5,10 @@ A Linguagem de Consulta Estruturada (SQL) na área de Psicologia é pouco explor
 Os dados são todos fictícios e não contém nenhuma informação sensível ou sigilosa. Nós iremos trabalhar com uma tabela de pacientes que iremos popular com ID do paciente, gênero, idade, valores da sessão, data do pagamento, data de desistência, data de entrada na terapia e tipo de acompanhamento (mensal, semanal ou quinzenal).
 
 # O que você vai aprender 
-* Como criar uma tabela usando **CREATE TABLE**
+* Como criar uma tabela e popular de valores usando **CREATE TABLE**, **INSERT INTO**
 * Como deletar informações usando **DELETE FROM**
 * Como selecionar e filtrar informações utilizando **SELECT** e **WHERE**
+* Como modificar valores usando **UPDATE** e **SET**
 
 > O mercado de negócios, empresas que contratam Analista de RH e outros nichos, pedem como requisito da vaga habilidades em SQL (e Python/R como diferencial). Então, para àqueles que estão pensando em transicionar de carreira da clínica para o mercado privado, se faz extremamente necessário saber essa linguagem. 
 

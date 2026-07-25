@@ -16,8 +16,43 @@ Então, o referente de `CREATE` podem ser `TABLE`, `SCHEMA` ou `DATABASE`, como 
 
 Então, você já aprendeu uma linha de código em SQL:
 ```python 
-CREATE TABLE Pacientes;
-```
-Aqui nós criamos uma tabela chamada 'Pacientes' e acrescentamos ponto e vírgula (";") para fechar o código. É a mesma função que o ponto final exerce em uma frase para concluir o sentido/oração. 
+CREATE TABLE Pacientes (
+    ID_Paciente INT PRYMARY KEY,
+    Gênero VARCHAR(50),
+    Idade INT,
+    Valor_Contratado_Sessao DECIMAL(5, 2),
+    Data_do_Pagamento DATE,
+    Data_de_Entrada_na_Terapia DATE,
+    Tipo_de_Acompanhamento VARCHAR(50)
 
-Certo, então nós temos uma tabela com todas as informações já? Simples assim? Calma lá gafanhoto, não podes exigir de um esqueleto que enxergue ou cheire, é preciso fornecer os órgãos (colunas e linhas da tablea). 
+);
+```
+
+Vamos por partes.
+
+Aqui nós criamos uma tabela chamada 'Pacientes' com a função **CREATE TABLE**, damos os nomes das colunas, os tipos e acrescentamos ponto e vírgula (";") para fechar o código. É a mesma função que o ponto final exerce em uma frase para concluir o sentido/oração. 
+O tipo da variável/coluna é necessário para que você torne aquela variável inequívoca na hora do preenchimento. Não tem como preencher a data de nascimento colocando 1988, você quer a data no formato "DD/MM/AAAA", dia, mês e ano. Então, o tipo da variável deve ser declarada.
+Quando utilizamos um `PRIMARY KEY`, chave-primária, estamos dizendo: essa coluna que recebe os ID's dos pacientes, isto é, seus identificadores que será do tipo **inteiro** (números), terá valores únicos, i.e., não repetidos, e não nulos. 
+Se você prestou atenção, então deve ter percebido que, no nosso exemplo, marcar uma chave-primária no identificador do paciente não faz sentido, pois, esse paciente fará mais de um pagamento, ou seja, terá seu identificador duplicado na coluna ID. Então, tome cuidado, pois, isso pode resultar em erros quando for rodar o código. 
+O que fazer, neste caso? 
+Podemos definir um conjunto de chaves-primárias, isto é, já que o paciente irá se repetir por pagar mais de uma vez, podemos criar outra chave-primária que o identifica e é um valor que não se repete, ou seja, a data de pagamento. Então, escreveríamos logo abaixo da última coluna criada na função **CREATE TABLE**:
+```python
+PRIMARY KEY(ID_Paciente, Data_do_Pagamento)
+
+```
+Por isso a importância de colocar o tipo dessa variável como DATE e não apenas como **VARCHAR**, porque aqui poderíamos ter facilmente algo como "Março" repetido uma vez por ano e, portanto, já daria erro na sintaxe. 
+
+Bom, dado esse adendo, podemos seguir. 
+
+### VARCHAR, CHAR e TEXT
+Entreguei a você sem dizer o que raios é isto. Basicamente, são propriedades de armazenamento do banco de dados que se relacionam com a natureza de uma variável do tipo nominal. Então, VARCHAR(100) armazena uma variável nominal limitada em 100 caracteres máximo, enquanto que um dado do tipo CHAR(50) limita a variável em exatos 50 caracteres. Por fim, o dado TEXT armazena variáveis nominais sem limitação de caracteres.
+
+### INT, DATE, DECIMAL
+Aqui, temos os tipos de armazenamento das variáveis numéricas. Coloquei DATE junto para facilitar o entendimento. Então, INT é o tipo de armazenamento de dados inteiros (1,2,3,4,5,...,etc.), DECIMAL são os Reais (1.52, 2.658, etc). Por fim, DATE armazena datas (dia, mês e ano). 
+
+--------
+> Certo, então nós temos uma tabela com todas as informações já? Simples assim? Calma lá gafanhoto, não podes exigir de um esqueleto que enxergue ou cheire, é preciso fornecer os órgãos (colunas e linhas da tablea). 
+
+### Populando a tabela
+
+
